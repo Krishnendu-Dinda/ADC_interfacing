@@ -7,11 +7,16 @@
  19.53mV(5v/256) . In this situation we open Vref/2.         
  
  The programming step given below :-     
- S1). Write a function for LCD data & LCD  command.  
- S2). Write a function which divides the hex value which is to get the ADC,  to a single character.  
+ S1). Write a function for LCD data & LCD  command. 
+ <br>
+ S2). Write a function which divides the hex value which is to get the ADC,  to a single character. 
+ <br>
  S3). start main function. In the main function first send a high signal to the "wrt" pin of ADC ic. 
- S4). Start an infinite loop  first send a  high signal to "rd" pin of ADC ic . then send a low signal to "wrt" pin  of the ADC ic then after so. after some delay send 
-      high signal to the "wrt" pin of ADC ic .  
+ <br>
+ S4). Start an infinite loop  first send a  high signal to "rd" pin of ADC ic . then send a low signal to "wrt" pin  of the ADC ic then after so. after some delay send high signal to the "wrt" pin of ADC ic .  
+<br>
  S5). Check "intr" pin value  is high or not  , if high then send a high signal to the "rd" pin of ADC ic . 
+ <br>
  S6).   The value sent to the  LCD  for displaying. 
+ <br>
  S7). Close the infinite loop & main function.
